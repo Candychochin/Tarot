@@ -1,0 +1,232 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0c29;
+  font-family: sans-serif, Arial;
+  padding-top: 80px;
+  /* Change The Display Later */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e0e0e0;
+  text-shadow: 0 0 1px hsla(0, 5%, 92%, 0.732);
+}
+
+/* Card Contianer and Card style */
+
+.card-container {
+  background-color: black;
+  width: 550px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  width: 160px;
+  height: 280px;
+  position: relative;
+  margin: 10px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  perspective: 800px;
+}
+
+.card img {
+  width: 100%;
+  position: absolute;
+  transition: transform 0.3s linear;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.tarot-card {
+  transform: rotateY(-180deg);
+  z-index: -1;
+}
+
+.card-back {
+  transform: rotateY(0deg);
+  z-index: 1;
+}
+
+.card:hover .card-back {
+  transform: rotateY(180deg);
+  z-index: -1;
+}
+
+.card:hover .tarot-card {
+  transform: rotateY(0deg);
+  z-index: 1;
+}
+
+/* Upper part is card container and this down go to the nav bar */
+
+.nav-bar {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background: rgba(15, 12, 41, 0.95);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0 0 3px black;
+  text-align: center;
+}
+
+.nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav-bar ul li:has(:not(button)) {
+  padding: 15px;
+  background-color: hsl(221, 100%, 50%);
+  margin: auto;
+  margin-right: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.nav-bar li:hover a {
+  color: #c9ad60;
+}
+
+.nav-bar ul li:has(:not(button)):hover {
+  background-color: hsl(221, 100%, 60%);
+}
+
+.logo img {
+  width: 70px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar ul li button {
+  padding: 15px;
+  background-color: hsl(221, 100%, 50%);
+  margin: 11px auto;
+  border: none;
+  margin-right: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-bar li button:hover {
+  color: #c9ad60;
+  background-color: hsl(221, 100%, 60%);
+}
+
+/* under this line is homepage body content */
+
+.homepage-body {
+  width: 100%;
+  margin: 0 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homepage-content {
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
+}
+
+.card-loop-container {
+  max-width: 90%;
+  min-width: 500px;
+  flex: 1;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  background-color: #0f0c29;
+  backdrop-filter: blur(10px);
+  gap: 16px;
+}
+
+.card-loop-container::before,
+.card-loop-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 50px;
+  height: 100%;
+}
+
+.card-loop-container::before {
+  left: 0;
+
+  background: linear-gradient(
+    to right,
+    hsl(246, 57%, 10%),
+    hsla(246, 57%, 10%, 0.624),
+    hsla(246, 57%, 10%, 0)
+  );
+  backdrop-filter: blur(1px);
+}
+
+.card-loop-container::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    hsl(246, 57%, 10%),
+    hsla(246, 57%, 10%, 0.624),
+    hsla(246, 57%, 10%, 0)
+  );
+  backdrop-filter: blur(1px);
+}
+
+.card-loop-group {
+  /* img div container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: spin 6s linear;
+}
+
+.card-loop-cards {
+  flex: 0 0 160px;
+  /* img div */
+  width: 160px;
+  height: 280px;
+}
+
+.card-loop-cards img {
+  width: 100%;
+}
+
+@keyframes spin {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
