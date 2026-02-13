@@ -6,7 +6,7 @@
 
 body {
   background-color: #0f0c29;
-  background:  radial-gradient(circle at 20% 30%, rgba(255, 215, 0, 0.08), transparent 40%),
+  background:  radial-gradient(circle at 30% 20%, rgba(255, 215, 0, 0.08), transparent 40%),
         radial-gradient(circle at 80% 70%, rgba(138, 43, 226, 0.12), transparent 40%),
         linear-gradient(135deg, #0f0c29, #1b1445, #090622);
   background-attachment: fixed;
@@ -18,6 +18,7 @@ body {
   align-items: center;
   color: #e0e0e0;
   text-shadow: 0 0 1px hsl(0, 0%, 100%);
+   letter-spacing: 1px;
 }
 
 /* Card Contianer and Card style */
@@ -189,6 +190,7 @@ body {
 }
 
 .homepage-content a{
+
   width: 50px;
   height: 30px;
   text-decoration: none;
@@ -216,20 +218,20 @@ body {
 
 .homepage-content h3{
   margin: 30px auto;
+ 
 }
 
 .homepage-content p{
   font-size: 14px;
-  margin: 30px auto;
+  margin: 30px auto 50px;
 
 }
 
 .homepage-slide-container{
-  width:80%;
+  width:65%;
   display: flex;
   flex-direction: column;
-  pointer-events: none;
-
+  
 }
 
 .card-loop-container {
@@ -240,11 +242,29 @@ body {
   position: relative;
   display: flex;
   overflow: hidden;
-  ackground:  radial-gradient(circle at 20% 30%, rgba(255, 215, 0, 0.08), transparent 40%),
-        radial-gradient(circle at 80% 70%, rgba(138, 43, 226, 0.12), transparent 40%),
-        linear-gradient(135deg, #0f0c29, #1b1445, #090622);
+  background: transparent;
   backdrop-filter: blur(10px);
-  gap: 16px;
+  gap: 20px;
+  /* box-shadow:inset 10px 0 15px -20px rgba(0,0,0,0.2),
+  inset -10px 0 15px -20px rgba(0,0,0,0.2); */
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  
+  /* Necessary for some browsers like Chrome/Safari */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+
 }
 
 .card-loop-container::before,
@@ -252,25 +272,30 @@ body {
   content: "";
   position: absolute;
   top: 0;
+
   z-index: 10;
   width: 80px;
   height: 100%;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 .card-loop-container::before {
-  left: 0;
-
+  left: -2px;
   background: linear-gradient(
     to right,
     hsl(246, 57%, 10%),
     hsla(246, 57%, 10%, 0.624),
     hsla(246, 57%, 10%, 0)
   );
+  
   backdrop-filter: blur(1px);
+
+
 }
 
 .card-loop-container::after {
-  right: 0;
+  right: -2px;
   background: linear-gradient(
     to left,
     hsl(246, 57%, 10%),
@@ -278,6 +303,7 @@ body {
     hsla(246, 57%, 10%, 0)
   );
   backdrop-filter: blur(1px);
+
 }
 
 .card-loop-group {
@@ -287,6 +313,7 @@ body {
   align-items: center;
   gap: 16px;
   animation: spinToLeft 25s linear;
+   transition: all 0.5s;
 }
 
 .card-loop-cards {
@@ -294,16 +321,45 @@ body {
   /* img div */
   width: 120px;
   height: 100%;
-
+   transition: all 0.5s;
 }
 
 .card-loop-cards img {
   width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
 }
 
-.card-loop-container.arcana-container{
-  animation: reverse;
+.card-loop-group.arcana{
+  animation: spinToRight 30s linear;
 }
+
+.card-loop-container:hover .card-loop-group{
+  animation-play-state: paused;
+}
+
+.card-loop-group:hover .card-loop-cards{
+  transform: scale(0.8);
+  opacity: 0.5;
+  filter: blur(2px);
+}
+
+.card-loop-group .card-loop-cards:hover{
+  transform: scale(1);
+  flex: 0 0 160px;
+  opacity: 1;
+  filter: blur(0);
+  z-index: 100;
+
+}
+
+
+
+.card-loop-container:hover::after ,
+.card-loop-container:hover::before{
+  opacity: 0;
+}
+
 
 
 @keyframes spinToLeft {
@@ -316,10 +372,10 @@ body {
 }
 
 @keyframes spinToRight {
-    from{
-      transform: translateX(-100%);
-    }
-    to{
-      transform: translateX(0);
-    }
+  from{
+    transform: translateX(-50%);
+  }
+  to{
+    transform: translateX(0);
+  }
 }
