@@ -314,8 +314,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  animation: spinToLeft 25s linear;
-   transition: all 0.5s;
+  animation: spinToLeft 25s infinite linear;
+   transition: all 0.5s ;
 }
 
 .card-loop-cards {
@@ -333,7 +333,7 @@ body {
 }
 
 .card-loop-group.arcana{
-  animation: spinToRight 30s linear;
+  animation: spinToRight 30s infinite linear;
 }
 
 .card-loop-container:hover .card-loop-group{
