@@ -47,15 +47,19 @@ button{
   position: fixed;
   top: 0;
   left: 0;
-  
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
   background: rgba(15, 12, 41, 0.95);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+ 
 
   text-align: center;
   z-index: 1000;
+}
+
+.nav-bar.library{
+  box-shadow: none;
 }
 
 .nav-bar .nav-bar-li{
@@ -121,6 +125,7 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .nav-bar .search-bar input{
@@ -137,6 +142,13 @@ button{
   0 0 7px rgba(0, 0, 0, 0.8);
   color: white;
   font-weight: 600;
+ 
+}
+
+.search-icon{
+  position: absolute;
+  right: 20px;
+
 }
 
 .nav-bar ul li button {
@@ -232,6 +244,39 @@ button{
   color: white;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.id-nav{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  z-index: 99;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  background: rgba(15, 12, 41, 0.95);
+
+}
+
+.id-nav div{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background: rgb(151, 141, 141);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px 6px;
+}
+
+.id-nav div a{
+  text-decoration: none;
+
+  font-size: 20px;
+  color: white;
 }
 
 /* under this line is homepage body content */
@@ -629,7 +674,16 @@ button{
   .card-library{
     display: none;
   }
+
+.id-nav div a{
+
+  font-size: 15px;
+ 
 }
+
+}
+
+
 
 @media (max-width:900px) {
   .search-bar input{
@@ -733,6 +787,11 @@ button{
   .search-bar input{
     width: 80%;
   }
+  .id-nav div a{
  
+
+    font-size: 10px;
+   
+  }
  
 }
