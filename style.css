@@ -13,6 +13,11 @@ body{
         linear-gradient(135deg, #0f0c29, #1b1445, #090622);
   background-attachment: fixed;
   font-family: "Cinzel", sans-serif, Arial;
+  font-weight: 500;
+}
+
+button{
+  font-family: inherit;
 }
 
 .page-warper {
@@ -23,8 +28,7 @@ body{
         radial-gradient(circle at 80% 70%, rgba(138, 43, 226, 0.12), transparent 40%),
         linear-gradient(135deg, #0f0c29, #1b1445, #090622);
   background-attachment: fixed; */
-  
-  padding-top: 80px;
+  padding-top: 90px;
   /* Change The Display Later */
   display: flex;
   justify-content: center;
@@ -34,54 +38,6 @@ body{
    letter-spacing: 1px;
 }
 
-/* Card Contianer and Card style */
-
-.card-container {
-  background-color: black;
-  width: 550px;
-  height: 300px;
-  display: flex;
-  flex-direction: row;
-}
-
-.card {
-  width: 160px;
-  height: 280px;
-  position: relative;
-  margin: 10px;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-  perspective: 800px;
-}
-
-.card img {
-  width: 100%;
-  position: absolute;
-  transition: transform 0.3s linear;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-  border-radius: 10px;
-}
-
-.tarot-card {
-  transform: rotateY(-180deg);
-  z-index: -1;
-}
-
-.card-back {
-  transform: rotateY(0deg);
-  z-index: 1;
-}
-
-.card:hover .card-back {
-  transform: rotateY(180deg);
-  z-index: -1;
-}
-
-.card:hover .tarot-card {
-  transform: rotateY(0deg);
-  z-index: 1;
-}
 
 /* Upper part is card container and this down go to the nav bar */
 
@@ -107,7 +63,7 @@ body{
 }
 
 .nav-bar h1 span{
-  color:   hsl(51, 60%, 50%);
+  color:   hsl(51, 61%, 44%);
   text-shadow: 0 0 1px  hsl(51, 60%, 50%);
 }
 
@@ -119,7 +75,7 @@ body{
 
 .nav-bar ul li:has(:not(button)) {
   padding: 13px;
-  background-color:  hsl(51, 60%, 50%);
+  background-color:  hsl(51, 67%, 46%);
   margin: auto;
   margin-right: 10px;
   border-radius: 4px;
@@ -135,13 +91,13 @@ body{
 
 .nav-bar li:hover a {
   color: black;
-  box-shadow: 0 0 5px  hsl(51, 60%, 45%);
 }
 
 .nav-bar ul li:has(:not(button)):hover {
-  background-color:  hsl(51, 60%, 45%);
+  background-color:  hsl(51, 64%, 38%);
   box-shadow: 0 0 5px  hsl(51, 60%, 45%);
 }
+
 
 .logo img {
   width: 70px;
@@ -156,8 +112,8 @@ body{
 }
 
 .nav-bar ul li button {
-  padding: 15px;
-  background-color:  hsl(51, 60%, 50%);
+  padding: 13px;
+  background-color: hsl(51, 67%, 46%);
   margin: 11px auto;
   border: none;
   margin-right: 10px;
@@ -170,7 +126,7 @@ body{
 
 .nav-bar li button:hover {
   color: black;
-  background-color:  hsl(51, 60%, 45%);
+  background-color:   hsl(51, 64%, 38%);
   box-shadow: 0 0 10px  hsl(51, 60%, 45%);
 }
 
@@ -202,7 +158,7 @@ body{
 .side-nav{
   position: fixed;
   top: 0;
-  right: -300px;
+  right: -330px;
   width: 300px;
   height: 100%;
   background: hsl(246, 57%, 10%);
@@ -278,7 +234,7 @@ body{
 
 .homepage-content span i{
   display: block;
-  color: hsl(51, 100%, 50%);
+  color: hsl(51, 89%, 48%);
   text-shadow: 0 0 3px hsl(51, 100%, 50%);
 }
 
@@ -289,7 +245,7 @@ body{
   text-decoration: none;
   color: #e0e0e0;
   padding: 10px 20px;
-  background: hsl(51, 60%, 50%);
+  background:  hsl(51, 74%, 44%);
   border: none;
   border-radius: 4px;
   font-size: 16px;
@@ -298,7 +254,7 @@ body{
 
 .homepage-content a:hover{
   color: black;
-  background-color:  hsl(51, 60%, 45%);
+  background-color:  hsl(51, 64%, 38%);
   box-shadow: 0 0 10px  hsl(51, 60%, 45%);
 }
 
@@ -338,8 +294,6 @@ body{
   background: transparent;
   backdrop-filter: blur(10px);
   gap: 20px;
-  /* box-shadow:inset 10px 0 15px -20px rgba(0,0,0,0.2),
-  inset -10px 0 15px -20px rgba(0,0,0,0.2); */
 
   mask-image: linear-gradient(
     to right,
@@ -348,8 +302,6 @@ body{
     black 90%,
     transparent 100%
   );
-  
-  /* Necessary for some browsers like Chrome/Safari */
   -webkit-mask-image: linear-gradient(
     to right,
     transparent 0%,
@@ -473,6 +425,129 @@ body{
   }
 }
 
+/* home page end here */
+
+
+
+.card-container {
+  background-color: transparent;
+  max-width: 70%;
+  min-width: 800px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-container.mobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 160px;
+  height: 245px;
+  position: relative;
+  margin: 10px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  perspective: 800px;
+}
+
+.card img {
+  width: 100%;
+  position: absolute;
+  transition: transform 0.3s linear;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.tarot-card {
+  transform: rotateY(-180deg);
+  z-index: -1;
+}
+
+.card-back {
+  transform: rotateY(0deg);
+  z-index: 1;
+}
+
+.card:hover .card-back {
+  transform: rotateY(180deg);
+  z-index: -1;
+}
+
+.card:hover .tarot-card {
+  transform: rotateY(0deg);
+  z-index: 1;
+}
+
+
+/* Upper One is Card Contianer and Card style */
+
+
+.deck-container{
+  /* draw page card parent container */
+  margin:50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.deck-container h3{
+  font-size: 24px;
+  
+}
+
+.deck-container h4{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.deck-container i{
+  color: hsl(51, 100%, 50%);
+
+}
+
+.deck-container button{
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  background: hsl(51, 96%, 43%);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 2px 5px hsl(51, 96%, 46%);
+}
+
+.deck-container button:hover{
+  color: #090622;
+  background: hsl(51, 94%, 38%);
+  box-shadow: 0 0px 5px hsl(51, 95%, 37%);
+}
+
+.deck-container.mobile{
+  gap: 20px;
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+/* upper is draw page body */
+
+
+
 
 
 
@@ -492,6 +567,17 @@ body{
     display: flex;
     margin-right: 10px;
   }
+  /* upper is home page */
+
+  .card-container {
+    min-width: 780px;
+  }
+  .card {
+    width: 100%;
+    /* height: ; */
+    
+  }
+
 }
 
 @media (max-width:780px) {
@@ -521,4 +607,23 @@ body{
     max-width: 100%;
     flex: none;
   }
+  /* upper is home page */
+    .card-container {
+    min-width: 650px;
+  }
+  .card {
+    width: 120px;
+    height: 200px;
+    
+  }
+  .deck-container.mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .deck-container{
+    display: none;
+  }
+
+
 }
