@@ -771,7 +771,8 @@ button{
   /* upper is home page */
 
   .card-container {
-    min-width: 780px;
+    min-width: 760px;
+    
   }
   .card {
     width: 100%;
