@@ -697,7 +697,7 @@ button{
   width: 100%;
   border-radius: 8px;
   box-shadow: 4px 4px 10px rgba(7, 7, 7, 0.4);
-  transition: transform 0.2s ease-in;
+  transition: all 0.25s ease-in;
 }
 
 .arcana-card-group div:hover img ,
