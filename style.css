@@ -437,7 +437,7 @@ button{
   justify-content: center;
   align-items: center;
   gap: 16px;
-  animation: spinToLeft 25s infinite linear;
+  animation: spinToLeft 25s infinite linear alternate;
    transition: all 0.5s ;
 }
 
@@ -456,7 +456,7 @@ button{
 }
 
 .card-loop-group.arcana{
-  animation: spinToRight 30s infinite linear;
+  animation: spinToLeft 33s infinite -8s linear alternate-reverse;
 }
 
 .card-loop-container:hover .card-loop-group{
@@ -496,14 +496,6 @@ button{
   }
 }
 
-@keyframes spinToRight {
-  from{
-    transform: translateX(-50%);
-  }
-  to{
-    transform: translateX(0);
-  }
-}
 
 /* home page end here */
 
@@ -830,6 +822,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
   .deck-container{
     display: none;
