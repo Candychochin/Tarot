@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   width: 100%;
   height: 100%;
@@ -14,6 +18,7 @@ body{
   background-attachment: fixed;
   font-family: "Cinzel", sans-serif, Arial;
   font-weight: 500;
+  
 }
 
 
@@ -708,6 +713,66 @@ button{
   transform: translateY(-5px);
   box-shadow: 0 0 20px hsl(51, 100%, 50%);
 }
+
+/* card library layout end here */
+/* click interact pop up start here */
+
+.card-modal{
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 20px;
+ 
+  z-index: 2000;
+
+}
+
+.card-modal-content{
+    background: linear-gradient(135deg, #0f0c29 , #1b1445);
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 25px hsl(51, 100%, 50%);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+    transform: scale(0,9);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.card-modal.active{
+  display: flex;
+}
+
+.card-modal img{
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.close-modal{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 
 
 
