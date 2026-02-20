@@ -732,6 +732,20 @@ button{
 
 }
 
+.card-modal-content h2{
+  margin: 5px;
+  font-weight: 600;
+  color: hsl(55, 80%, 45%);
+
+}
+
+
+.card-modal-content p{
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .card-modal-content{
     background: linear-gradient(135deg, #0f0c29 , #1b1445);
     padding: 30px;
@@ -742,6 +756,7 @@ button{
     position: relative;
     box-shadow: 0 0 25px hsl(51, 100%, 50%);
     animation: fadeIn 0.3s ease;
+    text-shadow: 0 0 2px black;
 }
 
 @keyframes fadeIn {
@@ -770,7 +785,7 @@ button{
   top: 10px;
   right: 15px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 
