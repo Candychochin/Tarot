@@ -19,7 +19,6 @@
 
   <body class="card-library-body">
     <div class="page-warper">
-
       <div class="card-modal" id="cardModal">
         <div class="card-modal-content">
           <span class="close-modal" id="closeModal">&times;</span>
@@ -29,7 +28,6 @@
         </div>
       </div>
 
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
       <nav class="nav-bar library">
         <div class="logo lib">
           <a href="./home.html">
@@ -49,7 +47,7 @@
         </div>
 
         <div class="nav-bar-li">
-          <ul>
+          <ul class="library-ul">
             <li><a href="./home.html">Home</a></li>
             <li><a href="./drawpage.html">Draw Card</a></li>
             <li class="card-library">
@@ -57,9 +55,7 @@
             </li>
             <li><button>EN | MM</button></li>
             <li>
-              <label for="nav-toggle" class="nav-button">
-                <span class="material-symbols-outlined">menu</span>
-              </label>
+              <span class="material-symbols-outlined" id="menuIcon">menu</span>
             </li>
           </ul>
         </div>
@@ -84,31 +80,35 @@
         </div>
       </div>
 
-      <nav class="side-nav">
-        <ul>
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="./drawpage.html">Draw Card</a></li>
-          <li><a href="./cardlibrary.html">Card Library</a></li>
-          <li><button>EN | MM</button></li>
-        </ul>
-      </nav>
+      <div class="side-container">
+        <nav class="side-nav">
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./drawpage.html">Draw Card</a></li>
+            <li><a href="./cardlibrary.html">Card Library</a></li>
+            <li><button>EN | MM</button></li>
+          </ul>
+        </nav>
+      </div>
 
       <div class="all-card-container">
         <div class="arcana-card-container">
           <h1 id="arcanaCard">Arcana Cards</h1>
           <div class="arcana-card-group">
-            <div class="card-loop-cards" 
-            data-title="The Fool"
-            data-meaning="New Beginnings, innocence, spontaneity, free spirit."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="The Fool"
+              data-meaning="New Beginnings, innocence, spontaneity, free spirit."
+            >
               <h3>The Fool</h3>
               <img src="./tarot_final/00-TheFool.webp" alt="00-TheFool" />
             </div>
 
-            <div class="card-loop-cards" 
-            data-title="The Magician"
-            data-meaning="Manifestation, power, inspired action."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="The Magician"
+              data-meaning="Manifestation, power, inspired action."
+            >
               <h3>The Magician</h3>
               <img
                 src="./tarot_final/01-TheMagician.webp"
@@ -116,10 +116,11 @@
               />
             </div>
 
-            <div class="card-loop-cards" 
-            data-title="The High Priestess"
-            data-meaning="Intuition, mystery, subconscious mind."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="The High Priestess"
+              data-meaning="Intuition, mystery, subconscious mind."
+            >
               <h3>The High Priestess</h3>
               <img
                 src="./tarot_final/02-TheHighPriestess.webp"
@@ -127,25 +128,28 @@
               />
             </div>
 
-            <div class="card-loop-cards" 
-            data-title="The Empress"
-            data-meaning="Abundance, nurturing, femininity."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="The Empress"
+              data-meaning="Abundance, nurturing, femininity."
+            >
               <h3>The Empress</h3>
               <img src="./tarot_final/03-TheEmpress.webp" alt="03-TheEmpress" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="The Emperor"
-            data-meaning="Authority, structure, leadership."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="The Emperor"
+              data-meaning="Authority, structure, leadership."
+            >
               <h3>The Emperor</h3>
               <img src="./tarot_final/04-TheEmperor.webp" alt="04-TheEmperor" />
             </div>
 
-            <div class="card-loop-cards" 
-            data-title="The Hierophant"
-            data-meaning="Tradition, spiritual wisdom, guidance."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="The Hierophant"
+              data-meaning="Tradition, spiritual wisdom, guidance."
+            >
               <h3>The Hierophant</h3>
               <img
                 src="./tarot_final/05-TheHierophant.webp"
@@ -153,131 +157,147 @@
               />
             </div>
 
-            <div class="card-loop-cards" 
-            data-title="The Lovers"
-            data-meaning="Love, harmony, relationships, choices."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="The Lovers"
+              data-meaning="Love, harmony, relationships, choices."
+            >
               <h3>The Lovers</h3>
               <img src="./tarot_final/06-TheLovers.webp" alt="06-TheLovers" />
             </div>
 
-            <div class="card-loop-cards" 
-            data-title="The Chariot"
-            data-meaning="Control, determination, victory."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="The Chariot"
+              data-meaning="Control, determination, victory."
+            >
               <h3>The Chariot</h3>
               <img src="./tarot_final/07-TheChariot.webp" alt="07-TheChariot" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Strength"
-            data-meaning="Courage, patience, inner strength."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Strength"
+              data-meaning="Courage, patience, inner strength."
+            >
               <h3>Strength</h3>
               <img src="./tarot_final/08-Strength.webp" alt="08-Strength" />
             </div>
 
-            <div class="card-loop-cards" 
-            data-title="The Hermit"
-            data-meaning="Introspection, solitude, inner guidance."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="The Hermit"
+              data-meaning="Introspection, solitude, inner guidance."
+            >
               <h3>The Hermit</h3>
               <img src="./tarot_final/09-TheHermit.webp" alt="09-TheHermit" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Wheel of Fortune"
-            data-meaning="Change, cycles, destiny."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Wheel of Fortune"
+              data-meaning="Change, cycles, destiny."
+            >
               <h3>Wheel Of Fortune</h3>
               <img
                 src="./tarot_final/10-WheelOfFortune.webp"
                 alt="10-WheelOfFortune"
               />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Justice"
-            data-meaning="Fairness, truth, cause and effect."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Justice"
+              data-meaning="Fairness, truth, cause and effect."
+            >
               <h3>Justice</h3>
               <img src="./tarot_final/11-Justice.webp" alt="11-Justice" />
             </div>
 
-            <div class="card-loop-cards" 
-            data-title="The Hanged Man"
-            data-meaning="Pause, surrender, new perspective."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="The Hanged Man"
+              data-meaning="Pause, surrender, new perspective."
+            >
               <h3>The Hanged Man</h3>
               <img
                 src="./tarot_final/12-TheHangedMan.webp"
                 alt="12-TheHangedMan"
               />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Death"
-            data-meaning="Transformation, endings, rebirth."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Death"
+              data-meaning="Transformation, endings, rebirth."
+            >
               <h3>Death</h3>
               <img src="./tarot_final/13-Death.webp" alt="13-Death" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Temperance"
-            data-meaning="Balance, moderation, harmony."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Temperance"
+              data-meaning="Balance, moderation, harmony."
+            >
               <h3>Temperance</h3>
               <img src="./tarot_final/14-Temperance.webp" alt="14-Temperance" />
             </div>
 
-            <div class="card-loop-cards" 
-            data-title="The Devil"
-            data-meaning="Attachment, temptation, limitation."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="The Devil"
+              data-meaning="Attachment, temptation, limitation."
+            >
               <h3>The Devil</h3>
               <img src="./tarot_final/15-TheDevil.webp" alt="15-TheDevil" />
             </div>
 
-            <div class="card-loop-cards" 
-            data-title="The Tower"
-            data-meaning="Sudden change, upheaval, revelation."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="The Tower"
+              data-meaning="Sudden change, upheaval, revelation."
+            >
               <h3>The Tower</h3>
               <img src="./tarot_final/16-TheTower.webp" alt="16-TheTower" />
             </div>
 
-            <div class="card-loop-cards" 
-            data-title="The Star"
-            data-meaning="Hope, inspiration, renewal."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="The Star"
+              data-meaning="Hope, inspiration, renewal."
+            >
               <h3>The Star</h3>
               <img src="./tarot_final/17-TheStar.webp" alt="17-TheStar" />
             </div>
 
-            <div class="card-loop-cards" 
-            data-title="The Moon"
-            data-meaning="Illusion, fear, subconscious."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="The Moon"
+              data-meaning="Illusion, fear, subconscious."
+            >
               <h3>The Moon</h3>
               <img src="./tarot_final/18-TheMoon.webp" alt="8-TheMoon" />
             </div>
 
-            <div class="card-loop-cards" 
-            data-title="The Sun"
-            data-meaning="Joy, success, positivity."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="The Sun"
+              data-meaning="Joy, success, positivity."
+            >
               <h3>The Sun</h3>
               <img src="./tarot_final/19-TheSun.webp" alt="19-TheSun" />
             </div>
 
-            <div class="card-loop-cards" 
-            data-title="Judgement"
-            data-meaning="Awakening, rebirth, inner calling."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Judgement"
+              data-meaning="Awakening, rebirth, inner calling."
+            >
               <h3>Judgement</h3>
               <img src="./tarot_final/20-Judgement.webp" alt="20-Judgement" />
             </div>
 
-            <div class="card-loop-cards" 
-            data-title="The World"
-            data-meaning="Completion, fulfillment, achievement."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="The World"
+              data-meaning="Completion, fulfillment, achievement."
+            >
               <h3>The World</h3>
               <img src="./tarot_final/21-TheWorld.webp" alt="21-TheWorld" />
             </div>
@@ -287,205 +307,233 @@
         <div class="cup-card-container">
           <h1 id="cupCard">Cup Cards</h1>
           <div class="cup-card-group">
-            <div class="card-loop-cards" 
-            data-title="Ace of Cups"
-            data-meaning="New love, emotional awakening, compassion."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Ace of Cups"
+              data-meaning="New love, emotional awakening, compassion."
+            >
               <h3>Ace of Cups</h3>
               <img src="./tarot_final/Cups01.webp" alt="Cups01" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Two of Cups"
-            data-meaning="Partnership, mutual attraction, harmony."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Two of Cups"
+              data-meaning="Partnership, mutual attraction, harmony."
+            >
               <h3>Two of Cups</h3>
               <img src="./tarot_final/Cups02.webp" alt="Cups02" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Three of Cups"
-            data-meaning="Celebration, friendship, community."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Three of Cups"
+              data-meaning="Celebration, friendship, community."
+            >
               <h3>Three of Cups</h3>
               <img src="./tarot_final/Cups03.webp" alt="Cups03" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Four of Cups"
-            data-meaning="Apathy, contemplation, reevaluation."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Four of Cups"
+              data-meaning="Apathy, contemplation, reevaluation."
+            >
               <h3>Four of Cups</h3>
               <img src="./tarot_final/Cups04.webp" alt="Cups04" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Five of Cups"
-            data-meaning="Loss, regret, disappointment."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Five of Cups"
+              data-meaning="Loss, regret, disappointment."
+            >
               <h3>Five of Cups</h3>
               <img src="./tarot_final/Cups05.webp" alt="Cups05" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Six of Cups"
-            data-meaning="Nostalgia, childhood memories, innocence."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Six of Cups"
+              data-meaning="Nostalgia, childhood memories, innocence."
+            >
               <h3>Six of Cups</h3>
               <img src="./tarot_final/Cups06.webp" alt="Cups06" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Seven of Cups"
-            data-meaning="Choices, illusion, wishful thinking."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Seven of Cups"
+              data-meaning="Choices, illusion, wishful thinking."
+            >
               <h3>Seven of Cups</h3>
               <img src="./tarot_final/Cups07.webp" alt="Cups07" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Eight of Cups"
-            data-meaning="Walking away, seeking deeper meaning."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Eight of Cups"
+              data-meaning="Walking away, seeking deeper meaning."
+            >
               <h3>Eight of Cups</h3>
               <img src="./tarot_final/Cups08.webp" alt="Cups08" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Nine of Cups"
-            data-meaning="Satisfaction, emotional fulfillment, wishes granted."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Nine of Cups"
+              data-meaning="Satisfaction, emotional fulfillment, wishes granted."
+            >
               <h3>Nine of Cups</h3>
               <img src="./tarot_final/Cups09.webp" alt="Cups09" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Ten of Cups"
-            data-meaning="Happiness, harmony, emotional bliss."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Ten of Cups"
+              data-meaning="Happiness, harmony, emotional bliss."
+            >
               <h3>Ten of Cups</h3>
               <img src="./tarot_final/Cups10.webp" alt="Cups10" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Page of Cups"
-            data-meaning="Creative opportunity, intuition, sensitivity."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Page of Cups"
+              data-meaning="Creative opportunity, intuition, sensitivity."
+            >
               <h3>Page of Cups</h3>
               <img src="./tarot_final/Cups11.webp" alt="Cups11" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Knight of Cups"
-            data-meaning="Romance, charm, following the heart."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Knight of Cups"
+              data-meaning="Romance, charm, following the heart."
+            >
               <h3>Knight of Cups</h3>
               <img src="./tarot_final/Cups12.webp" alt="Cups12" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Queen of Cups"
-            data-meaning="Compassion, emotional security, intuition."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Queen of Cups"
+              data-meaning="Compassion, emotional security, intuition."
+            >
               <h3>Queen of Cups</h3>
               <img src="./tarot_final/Cups13.webp" alt="Cups13" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="King of Cups"
-            data-meaning="Emotional balance, diplomacy, wisdom."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="King of Cups"
+              data-meaning="Emotional balance, diplomacy, wisdom."
+            >
               <h3>King of Cups</h3>
               <img src="./tarot_final/Cups14.webp" alt="Cups14" />
             </div>
           </div>
         </div>
 
-        <div class="pentacles-card-container">                          
+        <div class="pentacles-card-container">
           <h1 id="pentaclesCard">Pentacles Cards</h1>
           <div class="pentacles-card-group">
-            <div class="card-loop-cards" 
-            data-title="Ace of Pentacles"
-            data-meaning="New financial opportunity, prosperity."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Ace of Pentacles"
+              data-meaning="New financial opportunity, prosperity."
+            >
               <h3>Ace of Pentacles</h3>
               <img src="./tarot_final/Pentacles01.webp" alt="pentacles01" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Two of Pentacles"
-            data-meaning="Balance, adaptability, time management."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Two of Pentacles"
+              data-meaning="Balance, adaptability, time management."
+            >
               <h3>Two of Pentacles</h3>
               <img src="./tarot_final/Pentacles02.webp" alt="pentacles02" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Three of Pentacles"
-            data-meaning="Teamwork, collaboration, skill building."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Three of Pentacles"
+              data-meaning="Teamwork, collaboration, skill building."
+            >
               <h3>Three of Pentacles</h3>
               <img src="./tarot_final/Pentacles03.webp" alt="pentacles03" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Four of Pentacles"
-            data-meaning="Security, control, holding on."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Four of Pentacles"
+              data-meaning="Security, control, holding on."
+            >
               <h3>Four of Pentacles</h3>
               <img src="./tarot_final/Pentacles04.webp" alt="pentacles04" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Five of Pentacles"
-            data-meaning="Financial hardship, insecurity, loss."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Five of Pentacles"
+              data-meaning="Financial hardship, insecurity, loss."
+            >
               <h3>Five of Pentacles</h3>
               <img src="./tarot_final/Pentacles05.webp" alt="pentacles05" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Six of Pentacle"
-            data-meaning="Generosity, sharing, support."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Six of Pentacle"
+              data-meaning="Generosity, sharing, support."
+            >
               <h3>Six of Pentacles</h3>
               <img src="./tarot_final/Pentacles06.webp" alt="pentacles06" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Seven of Pentacles"
-            data-meaning="Patience, long-term investment."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Seven of Pentacles"
+              data-meaning="Patience, long-term investment."
+            >
               <h3>Seven of Pentacles</h3>
               <img src="./tarot_final/Pentacles07.webp" alt="pentacles07" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Eight of Pentacles"
-            data-meaning="Diligence, mastery, hard work."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Eight of Pentacles"
+              data-meaning="Diligence, mastery, hard work."
+            >
               <h3>Eight of Pentacles</h3>
               <img src="./tarot_final/Pentacles08.webp" alt="pentacles08" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Nine of Pentacles"
-            data-meaning="Independence, luxury, self-sufficiency."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Nine of Pentacles"
+              data-meaning="Independence, luxury, self-sufficiency."
+            >
               <h3>Nine of Pentacles</h3>
               <img src="./tarot_final/Pentacles09.webp" alt="pentacles09" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Ten of Pentacles"
-            data-meaning="Wealth, family security, legacy."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Ten of Pentacles"
+              data-meaning="Wealth, family security, legacy."
+            >
               <h3>Ten of Pentacles</h3>
               <img src="./tarot_final/Pentacles10.webp" alt="pentacles10" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Page of Pentacles"
-            data-meaning="New opportunities, study, ambition."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Page of Pentacles"
+              data-meaning="New opportunities, study, ambition."
+            >
               <h3>Page of Pentacles</h3>
               <img src="./tarot_final/Pentacles11.webp" alt="pentacles11" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Knight of Pentacles"
-            data-meaning="Responsibility, reliability, persistence."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Knight of Pentacles"
+              data-meaning="Responsibility, reliability, persistence."
+            >
               <h3>Knight of Pentacles</h3>
               <img src="./tarot_final/Pentacles12.webp" alt="pentacles12" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Queen of Pentacles"
-            data-meaning="Nurturing, practicality, financial security."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Queen of Pentacles"
+              data-meaning="Nurturing, practicality, financial security."
+            >
               <h3>Queen of Pentacles</h3>
               <img src="./tarot_final/Pentacles13.webp" alt="pentacles13" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="King of Pentacles"
-            data-meaning="Success, stability, business leadership."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="King of Pentacles"
+              data-meaning="Success, stability, business leadership."
+            >
               <h3>King of Pentacles</h3>
               <img src="./tarot_final/Pentacles14.webp" alt="pentacles14" />
             </div>
@@ -495,101 +543,115 @@
         <div class="sword-card-container">
           <h1 id="swordCard">Sword Cards</h1>
           <div class="sword-card-group">
-            <div class="card-loop-cards" 
-            data-title="Ace of Swords"
-            data-meaning="Clarity, truth, breakthrough, mental power."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Ace of Swords"
+              data-meaning="Clarity, truth, breakthrough, mental power."
+            >
               <h3>Ace of Swords</h3>
               <img src="./tarot_final/Swords01.webp" alt="Swords01" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Two of Swords"
-            data-meaning="Indecision, blocked emotions, stalemate."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Two of Swords"
+              data-meaning="Indecision, blocked emotions, stalemate."
+            >
               <h3>Two of Swords</h3>
               <img src="./tarot_final/Swords02.webp" alt="Swords02" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Three of Swords"
-            data-meaning="Heartbreak, sorrow, emotional pain."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Three of Swords"
+              data-meaning="Heartbreak, sorrow, emotional pain."
+            >
               <h3>Three of Swords</h3>
               <img src="./tarot_final/Swords03.webp" alt="Swords03" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Four of Swords"
-            data-meaning="Rest, recovery, contemplation."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Four of Swords"
+              data-meaning="Rest, recovery, contemplation."
+            >
               <h3>Four of Swords</h3>
               <img src="./tarot_final/Swords04.webp" alt="Swords04" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Five of Swords"
-            data-meaning="Conflict, tension, defeat."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Five of Swords"
+              data-meaning="Conflict, tension, defeat."
+            >
               <h3>Five of Swords</h3>
               <img src="./tarot_final/Swords05.webp" alt="Swords05" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Six of Swords"
-            data-meaning="Transition, moving forward, healing."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Six of Swords"
+              data-meaning="Transition, moving forward, healing."
+            >
               <h3>Six of Swords</h3>
               <img src="./tarot_final/Swords06.webp" alt="Swords06" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Seven of Swords"
-            data-meaning="Deception, strategy, secrecy."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Seven of Swords"
+              data-meaning="Deception, strategy, secrecy."
+            >
               <h3>Seven of Swords</h3>
               <img src="./tarot_final/Swords07.webp" alt="Swords07" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Eight of Swords"
-            data-meaning="Restriction, self-doubt, feeling trapped."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Eight of Swords"
+              data-meaning="Restriction, self-doubt, feeling trapped."
+            >
               <h3>Eight of Swords</h3>
               <img src="./tarot_final/Swords08.webp" alt="Swords08" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Nine of Swords"
-            data-meaning="Anxiety, worry, nightmares."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Nine of Swords"
+              data-meaning="Anxiety, worry, nightmares."
+            >
               <h3>Nine of Swords</h3>
               <img src="./tarot_final/Swords09.webp" alt="Swords09" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Ten of Swords"
-            data-meaning="Endings, betrayal, painful conclusion."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Ten of Swords"
+              data-meaning="Endings, betrayal, painful conclusion."
+            >
               <h3>Ten of Swords</h3>
               <img src="./tarot_final/Swords10.webp" alt="Swords10" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Page of Swords"
-            data-meaning="Curiosity, vigilance, new ideas."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Page of Swords"
+              data-meaning="Curiosity, vigilance, new ideas."
+            >
               <h3>Page of Swords</h3>
               <img src="./tarot_final/Swords11.webp" alt="Swords11" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Knight of Swords"
-            data-meaning="Ambition, action, determination."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Knight of Swords"
+              data-meaning="Ambition, action, determination."
+            >
               <h3>Knight of Swords</h3>
               <img src="./tarot_final/Swords12.webp" alt="Swords12" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Queen of Swords"
-            data-meaning="Independence, clarity, direct communication."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Queen of Swords"
+              data-meaning="Independence, clarity, direct communication."
+            >
               <h3>Queen of Swords</h3>
               <img src="./tarot_final/Swords13.webp" alt="Swords13" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="King of Swords"
-            data-meaning="Authority, intellect, truth."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="King of Swords"
+              data-meaning="Authority, intellect, truth."
+            >
               <h3>King of Swords</h3>
               <img src="./tarot_final/Swords14.webp" alt="Swords14" />
             </div>
@@ -599,101 +661,115 @@
         <div class="wand-card-container">
           <h1 id="wandCard">Wand Cards</h1>
           <div class="wand-card-group">
-            <div class="card-loop-cards" 
-            data-title="Ace of Wands"
-            data-meaning="New passion, inspiration, opportunity."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Ace of Wands"
+              data-meaning="New passion, inspiration, opportunity."
+            >
               <h3>Ace of Wands</h3>
               <img src="./tarot_final/Wands01.webp" alt="Wands01" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Two of Wands"
-            data-meaning="Planning, decisions, future direction."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Two of Wands"
+              data-meaning="Planning, decisions, future direction."
+            >
               <h3>Two of Wands</h3>
               <img src="./tarot_final/Wands02.webp" alt="Wands02" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Three of Wands"
-            data-meaning="Expansion, progress, foresight."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Three of Wands"
+              data-meaning="Expansion, progress, foresight."
+            >
               <h3>Three of Wands</h3>
               <img src="./tarot_final/Wands03.webp" alt="Wands03" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Four of Wands"
-            data-meaning="Celebration, harmony, home."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Four of Wands"
+              data-meaning="Celebration, harmony, home."
+            >
               <h3>Four of Wands</h3>
               <img src="./tarot_final/Wands04.webp" alt="Wands04" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Five of Wands"
-            data-meaning="Conflict, competition, tension."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Five of Wands"
+              data-meaning="Conflict, competition, tension."
+            >
               <h3>Five of Wands</h3>
               <img src="./tarot_final/Wands05.webp" alt="Wands05" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Six of Wands"
-            data-meaning="Victory, recognition, success."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Six of Wands"
+              data-meaning="Victory, recognition, success."
+            >
               <h3>Six of Wands</h3>
               <img src="./tarot_final/Wands06.webp" alt="Wands06" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Seven of Wands"
-            data-meaning="Defensiveness, perseverance."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Seven of Wands"
+              data-meaning="Defensiveness, perseverance."
+            >
               <h3>Seven of Wands</h3>
               <img src="./tarot_final/Wands07.webp" alt="Wands07" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Eight of Wands"
-            data-meaning="Movement, speed, progress."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Eight of Wands"
+              data-meaning="Movement, speed, progress."
+            >
               <h3>Eight of Wands</h3>
               <img src="./tarot_final/Wands08.webp" alt="Wands08" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Nine of Wands"
-            data-meaning="Resilience, persistence."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Nine of Wands"
+              data-meaning="Resilience, persistence."
+            >
               <h3>Nine of Wands</h3>
               <img src="./tarot_final/Wands09.webp" alt="Wands09" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Ten of Wands"
-            data-meaning="Burden, responsibility, stress."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Ten of Wands"
+              data-meaning="Burden, responsibility, stress."
+            >
               <h3>Ten of Wands</h3>
               <img src="./tarot_final/Wands10.webp" alt="Wands10" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Page of Wands"
-            data-meaning="Exploration, enthusiasm."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Page of Wands"
+              data-meaning="Exploration, enthusiasm."
+            >
               <h3>Page of Wands</h3>
               <img src="./tarot_final/Wands11.webp" alt="Wands11" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Knight of Wands"
-            data-meaning="Energy, action, adventure."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Knight of Wands"
+              data-meaning="Energy, action, adventure."
+            >
               <h3>Knight of Wands</h3>
               <img src="./tarot_final/Wands12.webp" alt="Wands12" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="Queen of Wands"
-            data-meaning="Confidence, warmth, courage."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="Queen of Wands"
+              data-meaning="Confidence, warmth, courage."
+            >
               <h3>Queen of Wands</h3>
               <img src="./tarot_final/Wands13.webp" alt="Wands13" />
             </div>
-            <div class="card-loop-cards" 
-            data-title="King of Wands"
-            data-meaning="Leadership, vision, inspiration."
-            id="card">
+            <div
+              class="card-loop-cards"
+              data-title="King of Wands"
+              data-meaning="Leadership, vision, inspiration."
+            >
               <h3>King of Wands</h3>
               <img src="./tarot_final/Wands14.webp" alt="Wands14" />
             </div>
@@ -702,42 +778,7 @@
       </div>
     </div>
 
-    <script>
-      const cards = document.querySelectorAll('#card');
-      const modal = document.getElementById('cardModal');
-      const modalImage = document.getElementById('modalImage');
-      const modalTitle = document.getElementById('modalTitle');
-      const modalMeaning = document.getElementById('modalMeaning');
-      const closeModal = document.getElementById('closeModal');
-      
-      cards.forEach(card =>{
-        card.addEventListener('click' , () => {
-          const img = card.querySelector('img').src;
-          const title = card.dataset.title;
-          const meaning = card.dataset.meaning;
-
-          modalImage.src = img;
-          modalTitle.textContent = title;
-          modalMeaning.textContent = meaning;
-
-          modal.classList.add('active');
-
-
-        });
-      });
-
-
-      closeModal.addEventListener('click', () => {
-        modal.classList.remove('active');
-      });
-
-      modal.addEventListener('click' , (e) => {
-        if(e.target === modal){
-          modal.classList.remove('active')
-        }
-      })
-
-
-    </script>
+    <script src="./script.js"></script>
+    <script src="./library.js"></script>
   </body>
 </html>
