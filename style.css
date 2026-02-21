@@ -763,7 +763,7 @@ button{
 .card-modal-content p{
   margin: 10px;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .card-modal-content{
@@ -798,6 +798,13 @@ button{
   width: 100%;
   max-width: 400px;
   border-radius: 8px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.reverse{
+  transform: rotateX(180deg);
+
 }
 
 .close-modal{
