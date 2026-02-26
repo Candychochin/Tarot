@@ -540,16 +540,16 @@ button {
   height: 270px;
   position: relative;
   margin: 10px;
-  transform-style: preserve-3d;
+  /* transform-style: preserve-3d; */
   backface-visibility: hidden;
-  perspective: 800px;
+  /* perspective: 800px; */
 }
 
 .card img {
   width: 100%;
   position: absolute;
   transition: transform 0.3s linear;
-  transform-style: preserve-3d;
+  /* transform-style: preserve-3d; */
   backface-visibility: hidden;
   border-radius: 10px;
 }
