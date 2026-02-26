@@ -6,11 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arcana Oracle - Draw Card Page</title>
   <link rel="stylesheet" href="./style.css" />
+  <link
+      rel="shortcut icon"
+      href="./tarot_final/tarot_logo_no_bg-removebg .svg"
+      type="image/x-icon"
+    />
+
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -60,12 +68,22 @@
 
   <!-- This is card draw section card container notice you need to change this again later -->
 
-  <main>
+  <main class="drawpage-body">
 
     <section class="deck-container">
-      <h3>Stay Clam and Foucs on Your Question</h3>
-      <h4>Select The Card And Click The Draw Button</h4>
-      <div class="card-container">
+      <h3>Stay Clam and </h3>
+        <h3>Focus on <i>Your Question</i></h3>
+      <h4>Select The Card And </h4> 
+        <h4>Click The Draw Button</h4>
+      <div class="card-container" id="cardContainer">
+        <div class="card hide">
+          <img src="./tarot_final/CardBacks.webp" alt="Card Back" class="card-back" />
+          <img src="./tarot_final/00-TheFool.webp" alt="The Fool " class="tarot-card" />
+        </div>
+        <div class="card">
+          <img src="./tarot_final/CardBacks.webp" alt="Card Back" class="card-back" />
+          <img src="./tarot_final/00-TheFool.webp" alt="The Fool " class="tarot-card" />
+        </div>
         <div class="card">
           <img src="./tarot_final/CardBacks.webp" alt="Card Back" class="card-back" />
           <img src="./tarot_final/00-TheFool.webp" alt="The Fool " class="tarot-card" />
@@ -75,44 +93,80 @@
           <img src="./tarot_final/CardBacks.webp" alt="" class="card-back" />
           <img src="./tarot_final/00-TheFool.webp" alt="" class="tarot-card" />
         </div>
-        <div class="card">
-          <img src="./tarot_final/CardBacks.webp" alt="" class="card-back" />
-          <img src="./tarot_final/00-TheFool.webp" alt="" class="tarot-card" />
-        </div>
-        <div class="card">
-          <img src="./tarot_final/CardBacks.webp" alt="" class="card-back" />
-          <img src="./tarot_final/00-TheFool.webp" alt="" class="tarot-card" />
-        </div>
-        <div class="card">
+        <div class="card hide">
           <img src="./tarot_final/CardBacks.webp" alt="" class="card-back" />
           <img src="./tarot_final/00-TheFool.webp" alt="" class="tarot-card" />
         </div>
       </div>
-      <button>Draw Card</button>
+      <button id="drawBtn">Draw Card</button>
     </section>
 
-    <section class="deck-container mobile">
-
-      <h3>Stay Clam And </h3>
-      <h3>Focus on Your <i>Question</i></h3>
-      <h4>Click to Draw a Card</h4>
-      <div class="card-container mobile">
-        <div class="card">
-          <img src="./tarot_final/CardBacks.webp" alt="Card Back" class="card-back" />
-          <img src="./tarot_final/00-TheFool.webp" alt="The Fool " class="tarot-card" />
-        </div>
-
-        <div class="card">
-          <img src="./tarot_final/CardBacks.webp" alt="" class="card-back" />
-          <img src="./tarot_final/00-TheFool.webp" alt="" class="tarot-card" />
-        </div>
-        <div class="card">
-          <img src="./tarot_final/CardBacks.webp" alt="" class="card-back" />
-          <img src="./tarot_final/00-TheFool.webp" alt="" class="tarot-card" />
-        </div>
+    <section class="result-section hide" id="resultSection">
+      <div class="result-left-section">
+        <h2>Test</h2>
+        <img src="">
+      
       </div>
-      <button>Draw Card</button>
+
+      <div class="result-right-section">
+
+        <div class="general-section">
+           <h2 id="general">General</h2>
+
+          <p id="generalResult"></p>
+        </div>
+       
+
+        <div class="love-section">
+          <h2 id="love">Love</h2>
+
+        <p id="loveResult"></p>
+        </div>
+
+        
+
+        <div class="career-secton">
+          <h2 id="career">Career</h2>
+
+         <p id="careerResult"></p>
+        </div>
+
+        
+
+       <div class="school-section">
+        <h2 id="school">Education</h2>
+
+         <p id="schoolResult"></p>
+       </div>
+
+        
+       <div class="finance-section">
+        <h2 id="finance">Finance</h2>
+
+        <p id="financeResult"></p>
+       </div>
+       
+        <div class="advice-section">
+            <h2 id="advice">Advice</h2>
+
+         <p id="adviceResult"></p>
+
+        </div>
+
+        
+      <div class="yes_no-section">
+        <h2 id="yes_no">For Yes or No question</h2>
+
+        <p id="yes_noResult"></p>
+      </div>
+
+        
+      </div>
     </section>
+    
+
+
+
 
   </main>
 
@@ -120,7 +174,7 @@
 
 
 
-
+   <script src="./cards.js"></script>
   <script src="./script.js"></script>
 </body>
 
