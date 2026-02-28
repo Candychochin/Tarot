@@ -828,6 +828,149 @@ Card style
   text-shadow: 0 0 2px black;
 }
 
+/* draw page question select  */
+
+
+.select-container {
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 19999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+
+}
+
+.select-container.hide{
+  display: none;
+}
+
+.select-content {
+  width: 380px;
+  height: 570px;
+  background-color: #0f0c29;
+  background:
+    radial-gradient(
+      circle at 30% 20%,
+      rgba(255, 215, 0, 0.08),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(138, 43, 226, 0.12),
+      transparent 40%
+    ),
+    linear-gradient(135deg, #0f0c29, #1b1445, #090622);
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 60px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.select-content h2 {
+  color: hsl(51, 60%, 50%);
+  font-size: 22px;
+}
+
+.select-content p{
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+
+
+}
+
+.select-options{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.select-options div{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin:  auto;
+  position: relative;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  
+ 
+}
+
+
+.select-content input{
+  display: none;
+  position: absolute;
+  pointer-events: none;
+}
+
+.select-content span{
+  color: hsl(51, 100%, 50%);
+}
+
+.select-content label {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 13px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  color: white;
+  border-radius: 10px;
+}
+
+
+.select-content input:checked ~ label {
+  
+  border: none;
+  width: 100%;
+  height: 100%;
+  
+  box-shadow: 0 0 5px hsl(213, 100%, 50%);
+}
+
+#proceedBtn {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background: hsl(51, 96%, 46%);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 2px 5px hsl(51, 60%, 45%);
+  margin-top: 10px;
+}
+
+#proceedBtn:hover {
+  color: #090622;
+  background: hsl(51, 94%, 38%);
+  box-shadow:  0 0 5px hsl(51, 100%, 50%);
+}
+
+.general-section.hide ,
+.love-section.hide ,
+.career-section.hide ,
+.school-section.hide ,
+.finance-section.hide ,
+.yes_no-section.hide {
+  display: none;
+}
+
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;

@@ -123,6 +123,113 @@ if (searchInput) {
 // under part is for draw card page 
 
 
+
+
+
+
+
+const proceedBtn = document.getElementById('proceedBtn');
+const radioBtns = document.querySelectorAll('input[name="type-selection"]');
+const selectionContainer = document.querySelector('.select-container');
+
+const generalSection = document.querySelector('.general-section');
+const loveSection = document.querySelector('.love-section');
+const careerSection = document.querySelector('.career-section');
+const schoolSection = document.querySelector('.school-section');
+const financeSection = document.querySelector('.finance-section');
+const yesNoSection = document.querySelector('.yes_no-section');
+
+
+
+
+let selectedType = ''; // Default selection
+
+function getSelectedType() {
+    const selectedRadio = [...radioBtns].find(radio => radio.checked);
+
+    if(selectedRadio) {
+        selectedType = selectedRadio.value;
+
+    }
+
+
+};
+
+proceedBtn.addEventListener('click' , ()=> {
+     getSelectedType();
+    selectionContainer.classList.add('hide');
+
+
+
+      switch (true) {
+    case selectedType === 'general':
+      generalSection.classList.remove('hide');
+      break;
+
+    case selectedType === 'love':
+    loveSection.classList.remove('hide');
+    break;
+
+    case selectedType === 'career':
+    careerSection.classList.remove('hide');
+    break;
+
+    
+    case selectedType === 'school':
+    schoolSection.classList.remove('hide');
+    break;
+
+    case selectedType === 'finance':
+      financeSection.classList.remove('hide');
+      break;
+
+      case selectedType === 'yes_no':
+        yesNoSection.classList.remove('hide');
+        break;
+
+
+  }
+})
+
+
+
+
+
+
+
+
+
+    // if (selectedType === 'general') {
+    //   generalSection.classList.remove('hide');
+      
+    // } else  if (selectedType === 'love') {
+      
+    //   loveSection.classList.remove('hide');
+      
+    // } else if (selectedType === 'career') {
+      
+    //   careerSection.classList.remove('hide');
+      
+    // } else if (selectedType === 'school') {
+  
+    //   schoolSection.classList.remove('hide');
+      
+    // } else if (selectedType === 'finance') {
+      
+    //   financeSection.classList.remove('hide');
+     
+    // } else if (selectedType === 'yes_no') {
+    
+    //   yesNoSection.classList.remove('hide');
+    // }
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const cardElement = document.querySelectorAll(".card");
@@ -133,9 +240,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentCards = [];
   let selectedIndex = null;
 
+
+
   function shuffledDeck(deckData){
     return [...deckData].sort(() => Math.random() - 0.5);
   }
+
 
   function setUpSpreadCards(){
 
@@ -195,8 +305,15 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('adviceResult').textContent = data.advice;
     document.getElementById('yes_noResult').textContent = data.yes_no;
 
+
+
+
+
+
+
     deck.classList.add('hide');
     resultSection.classList.remove('hide');
+
 
   });
 
