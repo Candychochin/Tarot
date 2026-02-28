@@ -199,30 +199,6 @@ proceedBtn.addEventListener('click' , ()=> {
 
 
 
-    // if (selectedType === 'general') {
-    //   generalSection.classList.remove('hide');
-      
-    // } else  if (selectedType === 'love') {
-      
-    //   loveSection.classList.remove('hide');
-      
-    // } else if (selectedType === 'career') {
-      
-    //   careerSection.classList.remove('hide');
-      
-    // } else if (selectedType === 'school') {
-  
-    //   schoolSection.classList.remove('hide');
-      
-    // } else if (selectedType === 'finance') {
-      
-    //   financeSection.classList.remove('hide');
-     
-    // } else if (selectedType === 'yes_no') {
-    
-    //   yesNoSection.classList.remove('hide');
-    // }
-
 
 
 
@@ -236,6 +212,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const deck = document.querySelector('.deck-container');
   const resultSection = document.querySelector('.result-section');
   const drawBtn = document.getElementById('drawBtn');
+
+
+let currentLanguage = 'en';
 
   let currentCards = [];
   let selectedIndex = null;
@@ -283,17 +262,35 @@ document.addEventListener("DOMContentLoaded", () => {
   // Draw button
   drawBtn.addEventListener('click' , () => {
 
-    if (selectedIndex === null){
+     if (selectedIndex === null){
       alert('Please select a card first.');
       return;
     }
 
+
+    renderResult();
+
+
+
+
+    deck.classList.add('hide');
+    resultSection.classList.remove('hide');
+
+
+  });
+
+  function renderResult() {
+    
+    if (selectedIndex === null) return;
+
     const selectedCard = currentCards[selectedIndex];
+
     const data = selectedCard.isReversed
-      ? selectedCard.reversed
-      : selectedCard.meaning;
+      ? selectedCard.reversed[currentLanguage]
+      : selectedCard.meaning[currentLanguage];
 
     resultSection.querySelector('img').src = selectedCard.image;
+    
     resultSection.querySelector('h2').textContent =
       selectedCard.name + (selectedCard.isReversed ? ' (Reversed)' : '');
 
@@ -304,18 +301,32 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('financeResult').textContent = data.finance;
     document.getElementById('adviceResult').textContent = data.advice;
     document.getElementById('yes_noResult').textContent = data.yes_no;
+  }
+
+  const langBtn = document.querySelectorAll('.langToggle');
+   
 
 
+  langBtn.forEach(btn => {
+    btn.addEventListener('click' , () => {
 
+    
 
+    if (currentLanguage === 'en') {
+      currentLanguage = 'mm';
+      langBtn.textContent = 'MM | EN';
+    } else {
+      currentLanguage = 'en';
+      langBtn.textContent = 'EN | MM'
+    }
 
+    renderResult();
 
+    
 
-    deck.classList.add('hide');
-    resultSection.classList.remove('hide');
+  } )
 
-
-  });
+  })
 
 });
 
