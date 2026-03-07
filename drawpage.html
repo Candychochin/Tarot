@@ -30,9 +30,9 @@
 
   <body>
     <div class="select-container">
-      <div class="select-content">
-        <h2>Welcome to Arcana Oracle</h2>
-        <p>Think About Your Question and <span>Select The Type</span></p>
+      <div class="select-content ">
+        <h2 data-lang="draw_title">Welcome to Arcana Oracle</h2>
+        <p data-lang="draw_subtitle">Think About Your Question and <span>Select The Type</span></p>
 
         <div class="select-options">
           <div>
@@ -43,7 +43,7 @@
               checked
               value="general"
             />
-            <label for="generalSelection">General</label>
+            <label for="generalSelection" data-lang="general_radio">General</label>
           </div>
 
           <div>
@@ -53,7 +53,7 @@
               id="loveSelection"
               value="love"
             />
-            <label for="loveSelection">Love</label>
+            <label for="loveSelection" data-lang="love_radio">Love</label>
           </div>
           <div>
             <input
@@ -62,7 +62,7 @@
               id="careerSelection"
               value="career"
             />
-            <label for="careerSelection">Career</label>
+            <label for="careerSelection" data-lang="career_radio">Career</label>
           </div>
           <div>
             <input
@@ -71,7 +71,7 @@
               id="schoolSelection"
               value="school"
             />
-            <label for="schoolSelection">Education</label>
+            <label for="schoolSelection" data-lang="education_radio">Education</label>
           </div>
           <div>
             <input
@@ -80,7 +80,7 @@
               id="financeSelection"
               value="finance"
             />
-            <label for="financeSelection">Finance</label>
+            <label for="financeSelection" data-lang="finance_radio">Finance</label>
           </div>
           <div>
             <input
@@ -92,7 +92,7 @@
             <label for="yes_noSelection">Yes or No</label>
           </div>
 
-          <button id="proceedBtn">Proceed to Draw Card</button>
+          <button id="proceedBtn" data-lang="selectionBtn">Proceed to Draw Card</button>
         </div>
       </div>
     </div>
@@ -116,7 +116,7 @@
             <li><a href="./home.html">Home</a></li>
             <li><a href="./drawpage.html">Draw Card</a></li>
             <li><a href="./cardlibrary.html">Card Library</a></li>
-            <li><button class="langToggle">EN | MM</button></li>
+            <li><button class="langToggle_draw">EN | MM</button></li>
             <li>
               <span class="material-symbols-outlined" id="menuIcon">menu</span>
             </li>
@@ -130,7 +130,7 @@
             <li><a href="./home.html">Home</a></li>
             <li><a href="./drawpage.html">Draw Card</a></li>
             <li><a href="./cardlibrary.html">Card Library</a></li>
-            <li><button class="langToggle">EN | MM</button></li>
+            <li><button class="langToggle_draw">EN | MM</button></li>
           </ul>
         </nav>
       </aside>
@@ -264,7 +264,8 @@
       </main>
     </div>
 
-    <script src="./cards.js"></script>
-    <script src="./script.js"></script>
+    <script src="./js/cards.js"></script>
+    <script src="./js/lang.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

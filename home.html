@@ -59,7 +59,7 @@
               <li><a href="./home.html">Home</a></li>
               <li><a href="./drawpage.html">Draw Card</a></li>
               <li><a href="./cardlibrary.html">Card Library</a></li>
-              <li></li>
+              <li><button class="langToggle">EN | MM</button></li>
             </ul>
       </nav>
     </aside>
@@ -67,17 +67,17 @@
     <main class="homepage-body">
 
       <section class="homepage-content">
-        <h1>
+        <h2 data-lang="home_title">
           Unlock the <span>Secrets</span> of <span><i>Your Journey</i></span>
-        </h1>
-        <h3>
+        </h2>
+        <h3 data-lang="home_subtitle">
           Seek Guidance, find clarity, and explore the ancient wisdom of the
           Tarot.
         </h3>
 
-        <p>Are you ready to draw a card? Click the Draw Cards button.</p>
+        <p data-lang="home_text">Are you ready to draw a card? Click the Draw Cards button.</p>
 
-        <a href="./drawpage.html">Draw Cards</a>
+        <a href="./drawpage.html" data-lang="draw_button">Draw Cards</a>
       </section>
 
       <section class="homepage-slide-container">
@@ -434,7 +434,9 @@
   </div>
 
 
-  <script src="./script.js"></script>
+  <script src="./js/lang.js"></script>
+  <script src="./js/script.js"></script>
+
 
 
   </body>
