@@ -161,6 +161,7 @@ button {
 .search-icon {
   position: absolute;
   right: 20px;
+  top: 22px;
 }
 
 .nav-bar ul li button {

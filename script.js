@@ -155,7 +155,11 @@ function getSelectedType() {
 
 };
 
-proceedBtn.addEventListener('click' , ()=> {
+if(proceedBtn){
+
+
+
+  proceedBtn.addEventListener('click' , ()=> {
      getSelectedType();
     selectionContainer.classList.add('hide');
 
@@ -189,7 +193,13 @@ proceedBtn.addEventListener('click' , ()=> {
 
 
   }
-})
+});
+
+
+
+};
+
+
 
 
 
