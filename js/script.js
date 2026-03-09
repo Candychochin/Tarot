@@ -197,6 +197,13 @@ updateLanguage();
 
 document.addEventListener("DOMContentLoaded", () => {
 
+
+  if(currentLanguage === 'en') {
+          selectContent.classList.add('addPad');
+  }
+  if(currentLanguage === 'mm') {
+          selectContent.classList.remove('addPad');
+  };
   
 
   updateLanguage();
@@ -297,10 +304,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if(typeof renderResult === 'function'){
         renderResult();
       }
-        if(currentLanguage === 'en') {
+       if(currentLanguage === 'en') {
           selectContent.classList.add('addPad');
-        } else if(currentLanguage === 'mm') {
-          selectContent.classList.remove('addPad');
+        }
+        if(currentLanguage === 'mm') {
+                selectContent.classList.remove('addPad');
         };
      
     });
@@ -333,7 +341,12 @@ document.addEventListener("DOMContentLoaded", () => {
       if(typeof renderResult === 'function'){
         renderResult();
       }
-
+       if(currentLanguage === 'en') {
+          selectContent.classList.add('addPad');
+  }
+  if(currentLanguage === 'mm') {
+          selectContent.classList.remove('addPad');
+  };
      
     });
   });

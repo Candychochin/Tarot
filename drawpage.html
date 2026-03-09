@@ -89,7 +89,7 @@
               id="yes_noSelection"
               value="yes_no"
             />
-            <label for="yes_noSelection">Yes or No</label>
+            <label id="yesNo" for="yes_noSelection">Yes or No</label>
           </div>
 
           <button id="proceedBtn" data-lang="selectionBtn">Proceed to Draw Card</button>
@@ -141,10 +141,10 @@
 
       <main class="drawpage-body">
         <section class="deck-container">
-          <h3>Stay Clam and</h3>
-          <h3>Focus on <i>Your Question</i></h3>
-          <h4>Select The Card And</h4>
-          <h4>Click The Draw Button</h4>
+          <h3 data-lang="draw_1sttitle">Stay Clam and</h3>
+          <h3 data-lang="draw_2ndtitle">Focus on <i>Your Question</i></h3>
+          <h4 data-lang="draw_3rdtitle">Select The Card And</h4>
+          <h4 data-lang="draw_4thtitle">Click The Draw Button</h4>
           <div class="card-container" id="cardContainer">
             <div class="card hide">
               <img
@@ -208,7 +208,7 @@
               />
             </div>
           </div>
-          <button id="drawBtn">Draw Card</button>
+          <button id="drawBtn" data-lang="draw_proceedBtn">Draw Card</button>
         </section>
 
         <section class="result-section hide" id="resultSection">
@@ -219,31 +219,31 @@
 
           <div class="result-right-section">
             <div class="general-section hide">
-              <h2 id="general">General</h2>
+              <h2 id="general" data-lang="general_radio">General</h2>
 
               <p id="generalResult"></p>
             </div>
 
             <div class="love-section hide">
-              <h2 id="love">Love</h2>
+              <h2 id="love" data-lang="love_radio">Love</h2>
 
               <p id="loveResult"></p>
             </div>
 
             <div class="career-section hide">
-              <h2 id="career">Career</h2>
+              <h2 id="career" data-lang="career_radio">Career</h2>
 
               <p id="careerResult"></p>
             </div>
 
             <div class="school-section hide">
-              <h2 id="school">Education</h2>
+              <h2 id="school" data-lang="education_radio">Education</h2>
 
               <p id="schoolResult"></p>
             </div>
 
             <div class="finance-section hide">
-              <h2 id="finance">Finance</h2>
+              <h2 id="finance" data-lang="finance_radio">Finance</h2>
 
               <p id="financeResult"></p>
             </div>
@@ -255,7 +255,7 @@
             </div>
 
             <div class="advice-section">
-              <h2 id="advice">Advice</h2>
+              <h2 id="advice" data-lang="advice_head">Advice</h2>
 
               <p id="adviceResult"></p>
             </div>

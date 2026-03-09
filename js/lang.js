@@ -18,8 +18,16 @@ const languageData = {
         education_radio : 'Education' ,
         finance_radio : 'Finance' ,
         selectionBtn : 'Proceed To Draw Card' ,
+        draw_1sttitle : 'Stay Clam And' ,
 
+        draw_2ndtitle : 'Focus on <i>Your Question</i>' ,
 
+        draw_3rdtitle : 'Select The Card And' ,
+        
+        draw_4thtitle : 'Click The Draw Button' ,
+        draw_proceedBtn : 'Draw A Card' , //drawpage draw btn
+        advice_head : 'Advice' ,
+    
     },
 
     mm: {
@@ -42,7 +50,12 @@ const languageData = {
         finance_radio : 'ဘဏ္ဍရေး' ,
         selectionBtn : 'ကဒ်ဆွဲရန်ထပ်နိပ်ပါ' ,
 
-
+        draw_1sttitle : 'စိတ်ကိုငြိမ်အောင်ထားပြီး' ,
+        draw_2ndtitle : 'သင့်ရဲ့ <i>မေးခွန်းကိုအာရုံစိုက်ထားပါ</i>' ,
+        draw_3rdtitle : 'ကဒ်တစ်ခုကိုရွေးပြီး' ,
+        draw_4thtitle : 'ကဒ်ဆွဲရန်ခလုတ်ကိုနိပ်လိုက်ပါ' ,
+        draw_proceedBtn : 'ကဒ်ဆွဲရန်' , //drawpage draw btn
+        advice_head : 'အကြံဥာဏ်' ,
     }
 
 

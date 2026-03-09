@@ -938,9 +938,17 @@ Card style
 
 }
 
-.select-content.addPad div label {
+
+
+.select-content.addPad div label[data-lang] {
   padding-top: 10px;
 } 
+
+#yesNo {
+  padding-top: 10px;
+}
+
+
 
 
 .select-content input:checked ~ label {
