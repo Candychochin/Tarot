@@ -2,6 +2,10 @@
 
 A simple interactive tarot card web app where users can draw cards and view their meanings.
 
+# Click the link to visit!
+
+https://arcanaoracle.netlify.app/
+
 ## ✨ Features
 
 * 🎴 Draw random tarot cards
