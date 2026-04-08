@@ -2,7 +2,7 @@ const arcanaCards = [
   {
     id: 0,
     name: "The Fool",
-    image: "./tarot_final/00-TheFool.webp",
+    image: "./img/00-TheFool.webp",
     meaning: {
       en: {
         general: "New beginnings, innocence, and a leap of faith.",
@@ -47,7 +47,7 @@ const arcanaCards = [
   {
     id: 1,
     name: "The Magician",
-    image: "./tarot_final/01-TheMagician.webp",
+    image: "./img/01-TheMagician.webp",
     meaning: {
       en: {
         general: "Manifestation, resourcefulness, and personal power.",
@@ -92,7 +92,7 @@ const arcanaCards = [
   {
     id: 2,
     name: "The High Priestess",
-    image: "./tarot_final/02-TheHighPriestess.webp",
+    image: "./img/02-TheHighPriestess.webp",
     meaning: {
       en: {
         general: "Intuition, mystery, and the subconscious mind.",
@@ -137,7 +137,7 @@ const arcanaCards = [
   {
     id: 3,
     name: "The Empress",
-    image: "./tarot_final/03-TheEmpress.webp",
+    image: "./img/03-TheEmpress.webp",
     meaning: {
       en: {
         general: "Abundance, nature, and nurturing.",
@@ -182,7 +182,7 @@ const arcanaCards = [
   {
     id: 4,
     name: "The Emperor",
-    image: "./tarot_final/04-TheEmperor.webp",
+    image: "./img/04-TheEmperor.webp",
     meaning: {
       en: {
         general: "Authority, structure, and foundation.",
@@ -227,7 +227,7 @@ const arcanaCards = [
   {
     id: 5,
     name: "The Hierophant",
-    image: "./tarot_final/05-TheHierophant.webp",
+    image: "./img/05-TheHierophant.webp",
     meaning: {
       en: {
         general: "Tradition, conformity, and spiritual wisdom.",
@@ -272,7 +272,7 @@ const arcanaCards = [
   {
     id: 6,
     name: "The Lovers",
-    image: "./tarot_final/06-TheLovers.webp",
+    image: "./img/06-TheLovers.webp",
     meaning: {
       en: {
         general: "Harmony, relationships, and choices.",
@@ -317,7 +317,7 @@ const arcanaCards = [
   {
     id: 7,
     name: "The Chariot",
-    image: "./tarot_final/07-TheChariot.webp",
+    image: "./img/07-TheChariot.webp",
     meaning: {
       en: {
         general: "Control, willpower, and victory.",
@@ -362,7 +362,7 @@ const arcanaCards = [
   {
     id: 8,
     name: "Strength",
-    image: "./tarot_final/08-Strength.webp",
+    image: "./img/08-Strength.webp",
     meaning: {
       en: {
         general: "Courage, persuasion, and influence.",
@@ -407,7 +407,7 @@ const arcanaCards = [
   {
     id: 9,
     name: "The Hermit",
-    image: "./tarot_final/09-TheHermit.webp",
+    image: "./img/09-TheHermit.webp",
     meaning: {
       en: {
         general: "Soul-searching, introspection, and solitude.",
@@ -452,7 +452,7 @@ const arcanaCards = [
   {
     id: 10,
     name: "Wheel of Fortune",
-    image: "./tarot_final/10-WheelOfFortune.webp",
+    image: "./img/10-WheelOfFortune.webp",
     meaning: {
       en: {
         general: "Luck, karma, and life cycles.",
@@ -497,7 +497,7 @@ const arcanaCards = [
   {
     id: 11,
     name: "Justice",
-    image: "./tarot_final/11-Justice.webp",
+    image: "./img/11-Justice.webp",
     meaning: {
       en: {
         general: "Fairness, truth, and law.",
@@ -542,7 +542,7 @@ const arcanaCards = [
   {
     id: 12,
     name: "The Hanged Man",
-    image: "./tarot_final/12-TheHangedMan.webp",
+    image: "./img/12-TheHangedMan.webp",
     meaning: {
       en: {
         general: "Pause, surrender, and new perspectives.",
@@ -587,7 +587,7 @@ const arcanaCards = [
   {
     id: 13,
     name: "Death",
-    image: "./tarot_final/13-Death.webp",
+    image: "./img/13-Death.webp",
     meaning: {
       en: {
         general: "Endings, transformation, and transition.",
@@ -632,7 +632,7 @@ const arcanaCards = [
   {
     id: 14,
     name: "Temperance",
-    image: "./tarot_final/14-Temperance.webp",
+    image: "./img/14-Temperance.webp",
     meaning: {
       en: {
         general: "Balance, patience, and moderation.",
@@ -677,7 +677,7 @@ const arcanaCards = [
   {
     id: 15,
     name: "The Devil",
-    image: "./tarot_final/15-TheDevil.webp",
+    image: "./img/15-TheDevil.webp",
     meaning: {
       en: {
         general: "Addiction, restriction, and attachment.",
@@ -722,7 +722,7 @@ const arcanaCards = [
   {
     id: 16,
     name: "The Tower",
-    image: "./tarot_final/16-TheTower.webp",
+    image: "./img/16-TheTower.webp",
     meaning: {
       en: {
         general: "Sudden change, upheaval, and revelation.",
@@ -767,7 +767,7 @@ const arcanaCards = [
   {
     id: 17,
     name: "The Star",
-    image: "./tarot_final/17-TheStar.webp",
+    image: "./img/17-TheStar.webp",
     meaning: {
       en: {
         general: "Hope, faith, and rejuvenation.",
@@ -812,7 +812,7 @@ const arcanaCards = [
   {
     id: 18,
     name: "The Moon",
-    image: "./tarot_final/18-TheMoon.webp",
+    image: "./img/18-TheMoon.webp",
     meaning: {
       en: {
         general: "Illusion, fear, and anxiety.",
@@ -857,7 +857,7 @@ const arcanaCards = [
   {
     id: 19,
     name: "The Sun",
-    image: "./tarot_final/19-TheSun.webp",
+    image: "./img/19-TheSun.webp",
     meaning: {
       en: {
         general: "Positivity, fun, and success.",
@@ -902,7 +902,7 @@ const arcanaCards = [
   {
     id: 20,
     name: "Judgement",
-    image: "./tarot_final/20-Judgement.webp",
+    image: "./img/20-Judgement.webp",
     meaning: {
       en: {
         general: "Rebirth, inner calling, and absolution.",
@@ -947,7 +947,7 @@ const arcanaCards = [
   {
     id: 21,
     name: "The World",
-    image: "./tarot_final/21-TheWorld.webp",
+    image: "./img/21-TheWorld.webp",
     meaning: {
       en: {
         general: "Completion, integration, and travel.",
@@ -997,7 +997,7 @@ const wandsCards = [
   {
     id: 22,
     name: "Ace of Wands",
-    image: "./tarot_final/Wands01.webp",
+    image: "./img/Wands01.webp",
     meaning: {
       en: {
         general: "A burst of energy, inspiration, and new potential.",
@@ -1042,7 +1042,7 @@ const wandsCards = [
   {
     id: 23,
     name: "Two of Wands",
-    image: "./tarot_final/Wands02.webp",
+    image: "./img/Wands02.webp",
     meaning: {
       en: {
         general: "Planning, making decisions, and looking toward the future.",
@@ -1087,7 +1087,7 @@ const wandsCards = [
   {
     id: 24,
     name: "Three of Wands",
-    image: "./tarot_final/Wands03.webp",
+    image: "./img/Wands03.webp",
     meaning: {
       en: {
         general: "Expansion, foresight, and ships coming in.",
@@ -1132,7 +1132,7 @@ const wandsCards = [
   {
     id: 25,
     name: "Four of Wands",
-    image: "./tarot_final/Wands04.webp",
+    image: "./img/Wands04.webp",
     meaning: {
       en: {
         general: "Celebration, homecoming, and stability.",
@@ -1177,7 +1177,7 @@ const wandsCards = [
   {
     id: 26,
     name: "Five of Wands",
-    image: "./tarot_final/Wands05.webp",
+    image: "./img/Wands05.webp",
     meaning: {
       en: {
         general: "Competition, conflict, and disagreement.",
@@ -1222,7 +1222,7 @@ const wandsCards = [
   {
     id: 27,
     name: "Six of Wands",
-    image: "./tarot_final/Wands06.webp",
+    image: "./img/Wands06.webp",
     meaning: {
       en: {
         general: "Public recognition, victory, and success.",
@@ -1267,7 +1267,7 @@ const wandsCards = [
   {
     id: 28,
     name: "Seven of Wands",
-    image: "./tarot_final/Wands07.webp",
+    image: "./img/Wands07.webp",
     meaning: {
       en: {
         general: "Defensiveness, perseverance, and protecting your territory.",
@@ -1312,7 +1312,7 @@ const wandsCards = [
   {
     id: 29,
     name: "Eight of Wands",
-    image: "./tarot_final/Wands08.webp",
+    image: "./img/Wands08.webp",
     meaning: {
       en: {
         general: "Speed, movement, and quick action.",
@@ -1357,7 +1357,7 @@ const wandsCards = [
   {
     id: 30,
     name: "Nine of Wands",
-    image: "./tarot_final/Wands09.webp",
+    image: "./img/Wands09.webp",
     meaning: {
       en: {
         general: 'Resilience, boundaries, and the "final push."',
@@ -1402,7 +1402,7 @@ const wandsCards = [
   {
     id: 31,
     name: "Ten of Wands",
-    image: "./tarot_final/Wands10.webp",
+    image: "./img/Wands10.webp",
     meaning: {
       en: {
         general: "Burden, responsibility, and overextension.",
@@ -1447,7 +1447,7 @@ const wandsCards = [
   {
     id: 32,
     name: "Page of Wands",
-    image: "./tarot_final/Wands11.webp",
+    image: "./img/Wands11.webp",
     meaning: {
       en: {
         general: "Exploration, excitement, and new messages.",
@@ -1492,7 +1492,7 @@ const wandsCards = [
   {
     id: 33,
     name: "Knight of Wands",
-    image: "./tarot_final/Wands12.webp",
+    image: "./img/Wands12.webp",
     meaning: {
       en: {
         general: "Action, adventure, and impulsiveness.",
@@ -1537,7 +1537,7 @@ const wandsCards = [
   {
     id: 34,
     name: "Queen of Wands",
-    image: "./tarot_final/Wands13.webp",
+    image: "./img/Wands13.webp",
     meaning: {
       en: {
         general: "Confidence, independence, and social butterflies.",
@@ -1582,7 +1582,7 @@ const wandsCards = [
   {
     id: 35,
     name: "King of Wands",
-    image: "./tarot_final/Wands14.webp",
+    image: "./img/Wands14.webp",
     meaning: {
       en: {
         general: "Leadership, vision, and entrepreneurship.",
@@ -1631,7 +1631,7 @@ const cupsCards = [
   {
     id: 36,
     name: "Ace of Cups",
-    image: "./tarot_final/Cups01.webp",
+    image: "./img/Cups01.webp",
     meaning: {
       en: {
         general: "New love, overflowing emotions, and spiritual peace.",
@@ -1676,7 +1676,7 @@ const cupsCards = [
   {
     id: 37,
     name: "Two of Cups",
-    image: "./tarot_final/Cups02.webp",
+    image: "./img/Cups02.webp",
     meaning: {
       en: {
         general: "Partnership, mutual attraction, and balance.",
@@ -1721,7 +1721,7 @@ const cupsCards = [
   {
     id: 38,
     name: "Three of Cups",
-    image: "./tarot_final/Cups03.webp",
+    image: "./img/Cups03.webp",
     meaning: {
       en: {
         general: "Friendship, community, and celebration.",
@@ -1766,7 +1766,7 @@ const cupsCards = [
   {
     id: 39,
     name: "Four of Cups",
-    image: "./tarot_final/Cups04.webp",
+    image: "./img/Cups04.webp",
     meaning: {
       en: {
         general: "Apathy, meditation, and missed opportunities.",
@@ -1811,7 +1811,7 @@ const cupsCards = [
   {
     id: 40,
     name: "Five of Cups",
-    image: "./tarot_final/Cups05.webp",
+    image: "./img/Cups05.webp",
     meaning: {
       en: {
         general: "Loss, regret, and disappointment.",
@@ -1856,7 +1856,7 @@ const cupsCards = [
   {
     id: 41,
     name: "Six of Cups",
-    image: "./tarot_final/Cups06.webp",
+    image: "./img/Cups06.webp",
     meaning: {
       en: {
         general: "Nostalgia, childhood, and innocence.",
@@ -1901,7 +1901,7 @@ const cupsCards = [
   {
     id: 42,
     name: "Seven of Cups",
-    image: "./tarot_final/Cups07.webp",
+    image: "./img/Cups07.webp",
     meaning: {
       en: {
         general: "Choices, illusions, and wishful thinking.",
@@ -1946,7 +1946,7 @@ const cupsCards = [
   {
     id: 43,
     name: "Eight of Cups",
-    image: "./tarot_final/Cups08.webp",
+    image: "./img/Cups08.webp",
     meaning: {
       en: {
         general: "Walking away, abandonment, and searching for truth.",
@@ -1991,7 +1991,7 @@ const cupsCards = [
   {
     id: 44,
     name: "Nine of Cups",
-    image: "./tarot_final/Cups09.webp",
+    image: "./img/Cups09.webp",
     meaning: {
       en: {
         general: 'Contentment, satisfaction, and "The Wish Card."',
@@ -2036,7 +2036,7 @@ const cupsCards = [
   {
     id: 45,
     name: "Ten of Cups",
-    image: "./tarot_final/Cups10.webp",
+    image: "./img/Cups10.webp",
     meaning: {
       en: {
         general: "Emotional wholeness, happy family, and alignment.",
@@ -2081,7 +2081,7 @@ const cupsCards = [
   {
     id: 46,
     name: "Page of Cups",
-    image: "./tarot_final/Cups11.webp",
+    image: "./img/Cups11.webp",
     meaning: {
       en: {
         general: "Creativity, intuition, and surprise news.",
@@ -2126,7 +2126,7 @@ const cupsCards = [
   {
     id: 47,
     name: "Knight of Cups",
-    image: "./tarot_final/Cups12.webp",
+    image: "./img/Cups12.webp",
     meaning: {
       en: {
         general: "Romance, charm, and imagination.",
@@ -2171,7 +2171,7 @@ const cupsCards = [
   {
     id: 48,
     name: "Queen of Cups",
-    image: "./tarot_final/Cups13.webp",
+    image: "./img/Cups13.webp",
     meaning: {
       en: {
         general: "Compassion, calm, and emotional stability.",
@@ -2216,7 +2216,7 @@ const cupsCards = [
   {
     id: 49,
     name: "King of Cups",
-    image: "./tarot_final/Cups14.webp",
+    image: "./img/Cups14.webp",
     meaning: {
       en: {
         general: "Emotional balance, control, and generosity.",
@@ -2266,7 +2266,7 @@ const swordsCards = [
   {
     id: 50,
     name: "Ace of Swords",
-    image: "./tarot_final/Swords01.webp",
+    image: "./img/Swords01.webp",
     meaning: {
       en: {
         general: "A mental breakthrough, clarity, and sharp intellect.",
@@ -2311,7 +2311,7 @@ const swordsCards = [
   {
     id: 51,
     name: "Two of Swords",
-    image: "./tarot_final/Swords02.webp",
+    image: "./img/Swords02.webp",
     meaning: {
       en: {
         general: "Stalemate, indecision, and a crossroads.",
@@ -2356,7 +2356,7 @@ const swordsCards = [
   {
     id: 52,
     name: "Three of Swords",
-    image: "./tarot_final/Swords03.webp",
+    image: "./img/Swords03.webp",
     meaning: {
       en: {
         general: "Heartbreak, sorrow, and emotional pain.",
@@ -2401,7 +2401,7 @@ const swordsCards = [
   {
     id: 53,
     name: "Four of Swords",
-    image: "./tarot_final/Swords04.webp",
+    image: "./img/Swords04.webp",
     meaning: {
       en: {
         general: "Rest, recovery, and contemplation.",
@@ -2446,7 +2446,7 @@ const swordsCards = [
   {
     id: 54,
     name: "Five of Swords",
-    image: "./tarot_final/Swords05.webp",
+    image: "./img/Swords05.webp",
     meaning: {
       en: {
         general: "Conflict, winning at any cost, and hollow victory.",
@@ -2491,7 +2491,7 @@ const swordsCards = [
   {
     id: 55,
     name: "Six of Swords",
-    image: "./tarot_final/Swords06.webp",
+    image: "./img/Swords06.webp",
     meaning: {
       en: {
         general: "Transition, moving on, and finding calmer waters.",
@@ -2536,7 +2536,7 @@ const swordsCards = [
   {
     id: 56,
     name: "Seven of Swords",
-    image: "./tarot_final/Swords07.webp",
+    image: "./img/Swords07.webp",
     meaning: {
       en: {
         general: 'Deception, strategy, and "the lone wolf."',
@@ -2581,7 +2581,7 @@ const swordsCards = [
   {
     id: 57,
     name: "Eight of Swords",
-    image: "./tarot_final/Swords08.webp",
+    image: "./img/Swords08.webp",
     meaning: {
       en: {
         general: "Feeling trapped, restricted, and victimized.",
@@ -2626,7 +2626,7 @@ const swordsCards = [
   {
     id: 58,
     name: "Nine of Swords",
-    image: "./tarot_final/Swords09.webp",
+    image: "./img/Swords09.webp",
     meaning: {
       en: {
         general: "Anxiety, nightmares, and mental anguish.",
@@ -2671,7 +2671,7 @@ const swordsCards = [
   {
     id: 59,
     name: "Ten of Swords",
-    image: "./tarot_final/Swords10.webp",
+    image: "./img/Swords10.webp",
     meaning: {
       en: {
         general: "Rock bottom, betrayal, and a painful ending.",
@@ -2716,7 +2716,7 @@ const swordsCards = [
   {
     id: 60,
     name: "Page of Swords",
-    image: "./tarot_final/Swords11.webp",
+    image: "./img/Swords11.webp",
     meaning: {
       en: {
         general: "Curiosity, mental agility, and new ideas.",
@@ -2761,7 +2761,7 @@ const swordsCards = [
   {
     id: 61,
     name: "Knight of Swords",
-    image: "./tarot_final/Swords12.webp",
+    image: "./img/Swords12.webp",
     meaning: {
       en: {
         general: "Directness, haste, and intellectual drive.",
@@ -2806,7 +2806,7 @@ const swordsCards = [
   {
     id: 62,
     name: "Queen of Swords",
-    image: "./tarot_final/Swords13.webp",
+    image: "./img/Swords13.webp",
     meaning: {
       en: {
         general: "Independence, clarity, and boundaries.",
@@ -2851,7 +2851,7 @@ const swordsCards = [
   {
     id: 63,
     name: "King of Swords",
-    image: "./tarot_final/Swords14.webp",
+    image: "./img/Swords14.webp",
     meaning: {
       en: {
         general: "Mental discipline, authority, and truth.",
@@ -2900,7 +2900,7 @@ const pentaclesCards = [
   {
     id: 64,
     name: "Ace of Pentacles",
-    image: "./tarot_final/Pentacles01.webp",
+    image: "./img/Pentacles01.webp",
     meaning: {
       en: {
         general: "A new financial or physical opportunity; manifestation.",
@@ -2945,7 +2945,7 @@ const pentaclesCards = [
   {
     id: 65,
     name: "Two of Pentacles",
-    image: "./tarot_final/Pentacles02.webp",
+    image: "./img/Pentacles02.webp",
     meaning: {
       en: {
         general: "Balance, multitasking, and adaptability.",
@@ -2990,7 +2990,7 @@ const pentaclesCards = [
   {
     id: 66,
     name: "Three of Pentacles",
-    image: "./tarot_final/Pentacles03.webp",
+    image: "./img/Pentacles03.webp",
     meaning: {
       en: {
         general: "Teamwork, collaboration, and learning.",
@@ -3035,7 +3035,7 @@ const pentaclesCards = [
   {
     id: 67,
     name: "Four of Pentacles",
-    image: "./tarot_final/Pentacles04.webp",
+    image: "./img/Pentacles04.webp",
     meaning: {
       en: {
         general: "Conservation, security, and possessiveness.",
@@ -3080,7 +3080,7 @@ const pentaclesCards = [
   {
     id: 68,
     name: "Five of Pentacles",
-    image: "./tarot_final/Pentacles05.webp",
+    image: "./img/Pentacles05.webp",
     meaning: {
       en: {
         general: "Hardship, poverty, and isolation.",
@@ -3125,7 +3125,7 @@ const pentaclesCards = [
   {
     id: 69,
     name: "Six of Pentacles",
-    image: "./tarot_final/Pentacles06.webp",
+    image: "./img/Pentacles06.webp",
     meaning: {
       en: {
         general: "Generosity, charity, and sharing wealth.",
@@ -3170,7 +3170,7 @@ const pentaclesCards = [
   {
     id: 70,
     name: "Seven of Pentacles",
-    image: "./tarot_final/Pentacles07.webp",
+    image: "./img/Pentacles07.webp",
     meaning: {
       en: {
         general: "Patience, investment, and waiting for the harvest.",
@@ -3215,7 +3215,7 @@ const pentaclesCards = [
   {
     id: 71,
     name: "Eight of Pentacles",
-    image: "./tarot_final/Pentacles08.webp",
+    image: "./img/Pentacles08.webp",
     meaning: {
       en: {
         general: "Apprenticeship, mastery, and diligence.",
@@ -3260,7 +3260,7 @@ const pentaclesCards = [
   {
     id: 72,
     name: "Nine of Pentacles",
-    image: "./tarot_final/Pentacles09.webp",
+    image: "./img/Pentacles09.webp",
     meaning: {
       en: {
         general: "Independence, luxury, and self-sufficiency.",
@@ -3305,7 +3305,7 @@ const pentaclesCards = [
   {
     id: 73,
     name: "Ten of Pentacles",
-    image: "./tarot_final/Pentacles10.webp",
+    image: "./img/Pentacles10.webp",
     meaning: {
       en: {
         general: "Legacy, inheritance, and long-term success.",
@@ -3350,7 +3350,7 @@ const pentaclesCards = [
   {
     id: 74,
     name: "Page of Pentacles",
-    image: "./tarot_final/Pentacles11.webp",
+    image: "./img/Pentacles11.webp",
     meaning: {
       en: {
         general: "Ambition, manifestation, and new beginnings.",
@@ -3395,7 +3395,7 @@ const pentaclesCards = [
   {
     id: 75,
     name: "Knight of Pentacles",
-    image: "./tarot_final/Pentacles12.webp",
+    image: "./img/Pentacles12.webp",
     meaning: {
       en: {
         general: "Routine, dependability, and hard work.",
@@ -3440,7 +3440,7 @@ const pentaclesCards = [
   {
     id: 76,
     name: "Queen of Pentacles",
-    image: "./tarot_final/Pentacles13.webp",
+    image: "./img/Pentacles13.webp",
     meaning: {
       en: {
         general: "Nurturing, practical, and resourceful.",
@@ -3485,7 +3485,7 @@ const pentaclesCards = [
   {
     id: 77,
     name: "King of Pentacles",
-    image: "./tarot_final/Pentacles14.webp",
+    image: "./img/Pentacles14.webp",
     meaning: {
       en: {
         general: "Abundance, security, and ultimate success.",
