@@ -53,14 +53,15 @@ https://arcanaoracle.netlify.app/
 ## 📸 Screenshots
 
 ### Home Page
-![Home](assets/home page.png)
+![Home](assets/home.png)
 
 ### Draw Page
-![Draw1](assets/draw page #1.png)
-![Draw12](assets/draw page #2.png)
+![Draw1](assets/draw#1.png)
+
+![Draw2](assets/draw#2.png)
 
 ### Library Page
-![Library](assets/library page.png)
+![Library](assets/library.png)
 
 ## 📌 Future Improvements
 
