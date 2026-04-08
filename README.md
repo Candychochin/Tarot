@@ -56,9 +56,9 @@ https://arcanaoracle.netlify.app/
 ![Home](assets/home.png)
 
 ### Draw Page
-![Draw1](assets/draw#1.png)
+![Draw1](assets/draw1.png)
 
-![Draw2](assets/draw#2.png)
+![Draw2](assets/draw2.png)
 
 ### Library Page
 ![Library](assets/library.png)
