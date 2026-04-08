@@ -46,11 +46,21 @@ https://arcanaoracle.netlify.app/
 
 ## 📚 Documentation
 
-See detailed docs in the `/docs` folder:
+- Card System → docs/card-system.md
+- Language System → docs/language-system.md
+- Draw Logic → docs/draw-logic.md
 
-* Card System
-* Language System
-* Draw Logic
+## 📸 Screenshots
+
+### Home Page
+![Home](assets/home page.png)
+
+### Draw Page
+![Draw1](assets/draw page #1.png)
+![Draw12](assets/draw page #2.png)
+
+### Library Page
+![Library](assets/library page.png)
 
 ## 📌 Future Improvements
 
